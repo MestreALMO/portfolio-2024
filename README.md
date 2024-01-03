@@ -1,40 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<br />
+<p align="center">
 
-## Getting Started
+  <h3 align="center">Portfolio</h3>
 
-First, run the development server:
+  <p align="center">
+    My portfolio 2024 edition
+    <br />
+    <br />
+    <img src="_README.md/app.gif" alt="gif">
+  </p>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about">About</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#running">Running</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+## About
+
+The 2024 edition of my portfolio, updated to better display my skills.
+It was built with [NextJS](https://nextjs.org/), page router.
+For CSS I'm using the "[file.module.css](https://nextjs.org/docs/pages/building-your-application/styling/css-modules)" examples that are included in NextJS.
+
+## Prerequisites
+
+To run in Windows 11 you need to install some tools, like: NodeJS, Chocolatey and more. [here](https://github.com/MestreALMO/React-Requires-To-Run-Windows-) is how to install all of it.
+<br/>
+
+## Running
+
+Access the root of the project with a terminal, if it is the first time running the project
+
+```
+npm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+If you have already run the code above the run:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+With that the app will be running!
+<br />You can access it with `http://localhost:3000/`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Contact
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+My Name: André Lusegardis Miranda de Oliveira
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- lusegardis@gmail.com
+- [LinkedIn](https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=andré-lusegardis)
+- [GitHub](https://github.com/MestreALMO)
+- [YouTube](https://www.youtube.com/@DeveloperALMO)
+- [LinkedIn](https://twitter.com/Lusegardis)
+- [CodePen](https://codepen.io/MestreALMO)

@@ -1,0 +1,23 @@
+.content {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: inherit;
+  border-bottom: 1px solid #aaa;
+  color: var(--foreground);
+  background: var(--background);
+  max-height: 48px;
+  height: 100%;
+}
+
+[data-theme="dark"] .content {
+  color: var(--foreground-dark);
+  background: var(--background-dark);
+}
+
+.logo {
+  font-size: 24px;
+  padding: 0 12px;
+}
