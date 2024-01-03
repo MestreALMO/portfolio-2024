@@ -1,7 +1,9 @@
 import styles from "./bottomBar.module.css";
 import Link from "next/link";
 import { FaHome } from "react-icons/fa";
+import { TiInfo } from "react-icons/ti";
 import { MdContactMail } from "react-icons/md";
+import { RiCodeSSlashLine } from "react-icons/ri";
 
 export const BottomBar = () => {
   return (
@@ -17,19 +19,31 @@ export const BottomBar = () => {
           </Link>
         </li>
         <li className={`${styles.mainButtonSize}`}>
-          <button className={`${styles.mainButtonSize} ${styles.mainButton}`}>
+          <Link
+            href={"/"}
+            className={`${styles.mainButtonSize} ${styles.mainButton}`}
+          >
+            <TiInfo />
             About
-          </button>
+          </Link>
         </li>
         <li className={`${styles.mainButtonSize}`}>
-          <button className={`${styles.mainButtonSize} ${styles.mainButton}`}>
+          <Link
+            href={"/"}
+            className={`${styles.mainButtonSize} ${styles.mainButton}`}
+          >
+            <MdContactMail />
             Contact
-          </button>
+          </Link>
         </li>
         <li className={`${styles.mainButtonSize}`}>
-          <button className={`${styles.mainButtonSize} ${styles.mainButton}`}>
+          <Link
+            href={"/"}
+            className={`${styles.mainButtonSize} ${styles.mainButton}`}
+          >
+            <RiCodeSSlashLine />
             Portfolio
-          </button>
+          </Link>
         </li>
       </ul>
     </>
