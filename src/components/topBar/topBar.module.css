@@ -1,4 +1,4 @@
-.content {
+.main {
   position: fixed;
   width: 100%;
   display: flex;
@@ -12,7 +12,7 @@
   height: 100%;
 }
 
-[data-theme="dark"] .content {
+[data-theme="dark"] .main {
   color: var(--foreground-dark);
   background: var(--background-dark);
 }

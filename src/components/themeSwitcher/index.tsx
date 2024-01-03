@@ -26,7 +26,7 @@ export const ThemeSwitcher = () => {
 
   return (
     <>
-      <button className={`${styles.content}`} onClick={handleCheckbox}>
+      <button className={`${styles.main}`} onClick={handleCheckbox}>
         <div className={`${styles.circle}`}>
           {theme === "light" ? (
             <LuLightbulb className={`${styles.icon}`} />
