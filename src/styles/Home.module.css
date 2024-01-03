@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 48px 12px;
+  padding: 60px 12px;
+  /* padding: 48px 12px; only the top and bottom bar */
   min-height: 100vh;
 }
 

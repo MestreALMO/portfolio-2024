@@ -11,29 +11,51 @@ const Contact = () => {
         <div className={`${styles.content}`}>
           <Link
             href={`mailto:lusegardis@gmail.com`}
+            target="_blank"
+            rel="Email"
             className={`${styles.email}`}
           >
             <span>Email:&nbsp;</span>
             <span>lusegardis@gmail.com</span>
           </Link>
           <div className={`${styles.items}`}>
-            <Link href="/">
+            <Link
+              href="https://www.linkedin.com/in/andr%C3%A9-lusegardis/detail/recent-activity/shares/"
+              target="_blank"
+              rel="Linkedin"
+            >
               <FaLinkedin />
               <span>Linkedin</span>
             </Link>
-            <Link href="/">
+            <Link
+              href="https://github.com/MestreALMO"
+              target="_blank"
+              rel="GitHub"
+            >
               <FaGithub />
               <span>GitHub</span>
             </Link>
-            <Link href="/">
+            <Link
+              href="https://www.youtube.com/@DeveloperALMO"
+              target="_blank"
+              rel="YouTube"
+            >
               <FaYoutube />
               <span>YouTube</span>
             </Link>
-            <Link href="/">
+            <Link
+              href="https://twitter.com/Lusegardis"
+              target="_blank"
+              rel="Twitter"
+            >
               <FaXTwitter />
               <span>Twitter</span>
             </Link>
-            <Link href="/">
+            <Link
+              href="https://codepen.io/MestreALMO"
+              target="_blank"
+              rel="Codepen"
+            >
               <FaCodepen />
               <span>Codepen</span>
             </Link>
