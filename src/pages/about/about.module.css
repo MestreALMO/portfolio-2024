@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 48px 12px;
+  min-height: 100vh;
+}
+
+.mainTitle {
+  margin: 10px 0;
+}
+
+.texts {
+  margin: 0 14px 14px;
+  max-width: 46em;
+}
+
+.texts p {
+  text-indent: 30px;
+}

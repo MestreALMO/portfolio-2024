@@ -1,17 +1,20 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 48px 12px;
   min-height: 100vh;
 }
 
-.homeImg {
-  width: 100%;
-  max-width: 310px;
+.mainTitle {
+  margin: 10px 0;
 }
 
-.text {
-  text-align: center;
+.texts {
+  margin: 0 14px;
+  max-width: 46em;
+}
+
+.texts p {
+  text-indent: 30px;
 }

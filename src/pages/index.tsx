@@ -23,8 +23,10 @@ export default function Home() {
           />
         </div>
         <h1>Welcome!</h1>
-        <p>I'm André Lusegardis Miranda de Oliveira,</p>
-        <p>it's a pleasure to have you here.</p>
+        <p className={`${styles.text}`}>
+          I'm André Lusegardis Miranda de Oliveira,
+        </p>
+        <p className={`${styles.text}`}>It's a pleasure to have you here.</p>
       </main>
     </>
   );

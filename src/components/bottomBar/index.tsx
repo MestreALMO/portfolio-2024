@@ -14,34 +14,34 @@ export const BottomBar = () => {
             href={"/"}
             className={`${styles.mainButtonSize} ${styles.mainButton}`}
           >
-            <FaHome />
+            <FaHome className={`${styles.icon}`} />
             Home
           </Link>
         </li>
         <li className={`${styles.mainButtonSize}`}>
           <Link
-            href={"/"}
+            href={"/about"}
             className={`${styles.mainButtonSize} ${styles.mainButton}`}
           >
-            <TiInfo />
+            <TiInfo className={`${styles.icon}`} />
             About
           </Link>
         </li>
         <li className={`${styles.mainButtonSize}`}>
           <Link
-            href={"/"}
+            href={"/contact"}
             className={`${styles.mainButtonSize} ${styles.mainButton}`}
           >
-            <MdContactMail />
+            <MdContactMail className={`${styles.icon}`} />
             Contact
           </Link>
         </li>
         <li className={`${styles.mainButtonSize}`}>
           <Link
-            href={"/"}
+            href={"/portfolio"}
             className={`${styles.mainButtonSize} ${styles.mainButton}`}
           >
-            <RiCodeSSlashLine />
+            <RiCodeSSlashLine className={`${styles.icon}`} />
             Portfolio
           </Link>
         </li>
