@@ -28,6 +28,7 @@ const Portfolio = () => {
             layout="responsive"
             objectFit="contain"
             className={`${styles.image}`}
+            loading="lazy"
           />
           <div className={`${styles.figureContent}`}>
             <RiCodeSSlashLine />

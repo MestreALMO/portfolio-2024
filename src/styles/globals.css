@@ -1,10 +1,10 @@
 :root {
   /* default theme */
   --background: #f1f1f1;
-  --foreground: #0f0f0f;
+  --foreground: #1f1f1f;
 
   /* dark theme */
-  --background-dark: #0f0f0f;
+  --background-dark: #1f1f1f;
   --foreground-dark: #f1f1f1;
 }
 

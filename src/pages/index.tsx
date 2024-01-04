@@ -20,6 +20,7 @@ export default function Home() {
             layout="responsive"
             objectFit="contain"
             style={{ borderRadius: "50%" }}
+            loading="lazy"
           />
         </div>
         <h1>Welcome!</h1>
