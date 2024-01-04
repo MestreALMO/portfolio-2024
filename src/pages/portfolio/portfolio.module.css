@@ -55,3 +55,16 @@
 .figureContent svg {
   font-size: 26px;
 }
+
+.portfolioCard {
+  transition: all 0.4s;
+}
+
+.portfolioCard:hover {
+  box-shadow: 0 0 20px var(--foreground);
+  transform: scale(1.04);
+}
+
+[data-theme="dark"] .portfolioCard:hover {
+  box-shadow: 0 0 20px var(--foreground-dark);
+}
