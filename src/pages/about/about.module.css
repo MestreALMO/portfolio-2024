@@ -13,7 +13,13 @@
 
 .texts {
   margin: 0 14px 14px;
-  max-width: 46em;
+  max-width: 740px;
+}
+
+@media only screen and (min-width: 450px) {
+  .texts {
+    font-size: 20px;
+  }
 }
 
 .texts p {
