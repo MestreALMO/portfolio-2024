@@ -6,8 +6,12 @@
   border-color: var(--gray-dark);
 }
 
-.main button:after {
+[data-theme="dark"] .main button:after {
   border-top: 5px solid var(--gray-dark);
+}
+[data-theme="dark"] .main button[aria-expanded="true"]:after {
+  border-top: 0;
+  border-bottom: 5px solid var(--gray-dark);
 }
 
 .main button:after aria-expanded {
