@@ -2,12 +2,16 @@ import Link from "next/link";
 import styles from "./contact.module.css";
 import { FaLinkedin, FaGithub, FaYoutube, FaCodepen } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { useTranslations } from "next-intl";
+import { GetStaticPropsContext } from "next";
 
 const Contact = () => {
+  const t = useTranslations("pages.contact");
+
   return (
     <>
       <div className={`${styles.main}`}>
-        <h1 className={`${styles.mainTitle}`}>Contact</h1>
+        <h1 className={`${styles.mainTitle}`}>{t("title")}</h1>
         <div className={`${styles.content}`}>
           <Link
             href={`mailto:lusegardis@gmail.com`}
@@ -65,5 +69,12 @@ const Contact = () => {
     </>
   );
 };
-
 export default Contact;
+
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      messages: (await import(`@/locales/${locale}.json`)).default,
+    },
+  };
+}

@@ -10,6 +10,7 @@
   background: var(--background);
   max-height: 48px;
   height: 100%;
+  padding: 0 10px;
 }
 
 [data-theme="dark"] .main {
@@ -18,6 +19,11 @@
 }
 
 .logo {
-  font-size: 24px;
-  padding: 0 12px;
+  font-size: 23px;
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

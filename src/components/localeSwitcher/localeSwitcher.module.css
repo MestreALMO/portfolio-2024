@@ -1,0 +1,13 @@
+.main {
+  margin-top: 4px;
+}
+
+.main ul {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+[data-theme="dark"] .main ul {
+  color: var(--foreground-dark);
+  background: var(--background-dark);
+}
