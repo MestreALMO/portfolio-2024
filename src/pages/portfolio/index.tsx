@@ -11,10 +11,10 @@ const Portfolio = () => {
   const t = useTranslations("pages.portfolio");
 
   const automaticHtml = useMemo((): ReactNode[] => {
-    return Projects.projects.map((item) => (
+    return Projects.projectsInfo.map((item) => (
       <Link
-        key={item}
-        href={`https://github.com/MestreALMO/` + item}
+        key={item.title}
+        href={`https://github.com/MestreALMO/` + item.title}
         target="_blank"
         rel="noopener noreferrer"
         className={`${styles.portfolioCard}`}
@@ -23,10 +23,10 @@ const Portfolio = () => {
           <Image
             src={
               `${Projects.githubLink}` +
-              `${item}` +
+              `${item.title}` +
               "/blob/main/_README.md/img01.png?raw=true"
             }
-            alt={item}
+            alt={item.title}
             width="1919"
             height="1079"
             layout="responsive"
@@ -36,7 +36,14 @@ const Portfolio = () => {
           />
           <div className={`${styles.figureContent}`}>
             <RiCodeSSlashLine />
-            <figcaption>{item}</figcaption>
+            <div>
+              <figcaption className={`${styles.figCaptionTitle}`}>
+                {item.title}
+              </figcaption>
+              <figcaption className={`${styles.figCaptionText}`}>
+                {item.en}
+              </figcaption>
+            </div>
           </div>
         </figure>
       </Link>

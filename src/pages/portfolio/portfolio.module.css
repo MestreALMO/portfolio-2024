@@ -38,10 +38,24 @@
   min-width: 100%;
 }
 
+.figCaptionTitle {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.figCaptionText {
+  color: var(--gray);
+  font-size: 14px;
+}
+
+[data-theme="dark"] .figCaptionText {
+  color: var(--gray-dark);
+}
+
 .image {
   min-width: 320px;
   max-width: 360px;
-  transition: all 0.4s;
+  transition: all 0.2s;
 }
 
 @media only screen and (min-width: 700px) {
@@ -60,7 +74,7 @@
 
 .portfolioCard {
   background-color: var(--background);
-  transition: all 0.4s;
+  transition: box-shadow 0.4s;
 }
 
 [data-theme="dark"] .portfolioCard {

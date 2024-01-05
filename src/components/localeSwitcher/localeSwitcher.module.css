@@ -2,6 +2,28 @@
   margin-top: 4px;
 }
 
+.main button {
+  border-color: var(--gray-dark);
+}
+
+.main button:after {
+  border-top: 5px solid var(--gray-dark);
+}
+
+.main button:after aria-expanded {
+  border-bottom: 5px solid var(--gray-dark);
+}
+
+.main span {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+[data-theme="dark"] .main span {
+  color: var(--foreground-dark);
+  background: var(--background-dark);
+}
+
 .main ul {
   color: var(--foreground);
   background: var(--background);
