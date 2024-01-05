@@ -6,9 +6,11 @@ import Link from "next/link";
 import { RiCodeSSlashLine } from "react-icons/ri";
 import { useTranslations } from "next-intl";
 import { GetStaticPropsContext } from "next";
+import { useRouter } from "next/router";
 
 const Portfolio = () => {
   const t = useTranslations("pages.portfolio");
+  const router = useRouter();
 
   const automaticHtml = useMemo((): ReactNode[] => {
     return Projects.projectsInfo.map((item) => (
@@ -41,7 +43,11 @@ const Portfolio = () => {
                 {item.title}
               </figcaption>
               <figcaption className={`${styles.figCaptionText}`}>
-                {item.en}
+                {router.locale === "en"
+                  ? item.en
+                  : router.locale === "pt"
+                  ? item.pt
+                  : item.fr}
               </figcaption>
             </div>
           </div>
