@@ -1,4 +1,3 @@
-import { ReactNode, useMemo } from "react";
 import * as Projects from "./projects";
 import Image from "next/image";
 import styles from "./portfolio.module.css";
@@ -12,7 +11,7 @@ const Portfolio = () => {
   const t = useTranslations("pages.portfolio");
   const router = useRouter();
 
-  const automaticHtml = useMemo((): ReactNode[] => {
+  const automaticHtml = () => {
     return Projects.projectsInfo.map((item) => (
       <Link
         key={item.title}
@@ -54,14 +53,14 @@ const Portfolio = () => {
         </figure>
       </Link>
     ));
-  }, []);
+  };
 
   return (
     <>
       <div className={`${styles.main}`}>
         <h1 className={`${styles.mainTitle}`}>{t("title")}</h1>
         <p className={`${styles.warning}`}>{t("warning")}</p>
-        <div className={`${styles.content}`}>{automaticHtml}</div>
+        <div className={`${styles.content}`}>{automaticHtml()}</div>
       </div>
     </>
   );
