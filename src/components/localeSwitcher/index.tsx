@@ -75,11 +75,19 @@ export const LocaleSwitcher = () => {
         selected={selected}
         onSelect={handleSwitchLocale}
         countries={["US", "BR", "FR"]}
-        customLabels={{
-          US: "EN-US",
-          BR: "PT-BR",
-          FR: "FR-FR",
-        }}
+        customLabels={
+          typeof window !== "undefined" && window.innerWidth >= refreshNumber
+            ? {
+                US: "EN-US",
+                BR: "PT-BR",
+                FR: "FR-FR",
+              }
+            : {
+                US: " ",
+                BR: " ",
+                FR: " ",
+              }
+        }
         showSelectedLabel={
           typeof window !== "undefined" && window.innerWidth >= refreshNumber
             ? true
