@@ -11,10 +11,15 @@
   max-height: 48px;
   height: 100%;
 }
-
 [data-theme="dark"] .main {
   color: var(--foreground-dark);
   background: var(--background-dark);
+}
+
+@media only screen and (min-width: 700px) {
+  .main {
+    width: 127px;
+  }
 }
 
 .mainButton {

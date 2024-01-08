@@ -68,7 +68,7 @@ export const LocaleSwitcher = () => {
         onSelect={handleSwitchLocale}
         countries={["US", "BR", "FR"]}
         customLabels={
-          pageWidth >= 700
+          pageWidth >= 430
             ? {
                 US: "EN-US",
                 BR: "PT-BR",
@@ -80,7 +80,7 @@ export const LocaleSwitcher = () => {
                 FR: " ",
               }
         }
-        showSelectedLabel={pageWidth >= 700 ? true : false} //name of the country
+        showSelectedLabel={pageWidth >= 430 ? true : false} //name of the country
         fullWidth={false}
         className={`${styles.main}`}
       />
