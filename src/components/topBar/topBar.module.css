@@ -10,7 +10,7 @@
   background: var(--background);
   max-height: 48px;
   height: 100%;
-  padding: 0 10px;
+  padding: 0 6px;
 }
 
 [data-theme="dark"] .main {
@@ -19,7 +19,7 @@
 }
 
 .logo {
-  font-size: 23px;
+  font-size: 22px;
 }
 
 .leftSide {

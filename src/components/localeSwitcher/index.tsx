@@ -47,27 +47,19 @@ export const LocaleSwitcher = () => {
   //grabbing initial language
   const [selected, setSelected] = useState(languageToCountry(initialLanguage));
 
-  //refreshing page
-  const refreshNumber = 700;
-  const [windowSize, setWindowSize] = useState<number>(
+  //inserting window.innerWidth into pageWidth state
+  const [pageWidth, setPageWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 0
   );
   useEffect(() => {
-    const handleResize = () => {
-      const newWindowSize = window.innerWidth;
-      if (windowSize <= refreshNumber && newWindowSize > refreshNumber) {
-        // reload when transition pass through "refreshNumber"
-        window.location.reload();
-      }
-      setWindowSize(newWindowSize);
+    const atualizarLarguraDaJanela = () => {
+      setPageWidth(window.innerWidth);
     };
-    // Add listener to window resize at component load
-    window.addEventListener("resize", handleResize);
-    // Remove listener to window resize at component unload
+    window.addEventListener("resize", atualizarLarguraDaJanela);
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", atualizarLarguraDaJanela);
     };
-  }, [windowSize]);
+  }, []);
 
   return (
     <>
@@ -76,7 +68,7 @@ export const LocaleSwitcher = () => {
         onSelect={handleSwitchLocale}
         countries={["US", "BR", "FR"]}
         customLabels={
-          typeof window !== "undefined" && window.innerWidth >= refreshNumber
+          pageWidth >= 700
             ? {
                 US: "EN-US",
                 BR: "PT-BR",
@@ -88,11 +80,7 @@ export const LocaleSwitcher = () => {
                 FR: " ",
               }
         }
-        showSelectedLabel={
-          typeof window !== "undefined" && window.innerWidth >= refreshNumber
-            ? true
-            : false
-        } //name of the country
+        showSelectedLabel={pageWidth >= 700 ? true : false} //name of the country
         fullWidth={false}
         className={`${styles.main}`}
       />
