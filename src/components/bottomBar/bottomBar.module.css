@@ -16,7 +16,7 @@
   background: var(--background-dark);
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
   .main {
     top: 48px;
     border-top: transparent;
