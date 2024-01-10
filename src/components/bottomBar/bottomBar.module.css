@@ -18,7 +18,9 @@
 
 @media only screen and (min-width: 700px) {
   .main {
-    width: 127px;
+    top: 48px;
+    border-top: transparent;
+    border-bottom: 1px solid #aaa;
   }
 }
 
@@ -26,7 +28,6 @@
   border-color: transparent;
   color: var(--foreground);
   background: var(--background);
-  transition: all 0.4s;
   font-size: 11px;
 }
 
@@ -37,10 +38,12 @@
 
 .mainButton:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.4s;
 }
 
 [data-theme="dark"] .mainButton:hover {
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.4s;
 }
 
 .mainButtonSize {

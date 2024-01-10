@@ -5,9 +5,9 @@ import { TopBar } from "../topBar";
 export const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <>
+      <BottomBar />
       <TopBar />
       {children}
-      <BottomBar />
     </>
   );
 };
